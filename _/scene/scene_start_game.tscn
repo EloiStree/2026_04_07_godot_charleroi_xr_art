@@ -1,6 +1,7 @@
 [gd_scene format=3 uid="uid://j05l3iqfoqdh"]
 
 [ext_resource type="Script" uid="uid://bf55ge5c4hjfg" path="res://_/script/xr_setting_at_ready.gd" id="1_ihvux"]
+[ext_resource type="PackedScene" uid="uid://cwlg1avpp1bdc" path="res://addons/2026_04_07_gdp_charleroi_xr_art_on_godot/stree_eloi/scene/demo_main_stree_eloi.tscn" id="2_af7mq"]
 
 [sub_resource type="CylinderMesh" id="CylinderMesh_o6w0v"]
 
@@ -12,8 +13,13 @@
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="." unique_id=1162879152]
 transform = Transform3D(1, 0, 0, 0, 0.11998898, 0, 0, 0, 1, 0, 0.08363664, -0.9237919)
+visible = false
 mesh = SubResource("CylinderMesh_o6w0v")
 
 [node name="XrSettingAtReady" type="Node3D" parent="." unique_id=1369212372]
 script = ExtResource("1_ihvux")
 metadata/_custom_type_script = "uid://bf55ge5c4hjfg"
+
+[node name="Team" type="Node3D" parent="." unique_id=2017321449]
+
+[node name="DemoMainStreeEloi" parent="Team" unique_id=1575648132 instance=ExtResource("2_af7mq")]
