@@ -1,0 +1,13 @@
+[gd_scene format=3 uid="uid://j05l3iqfoqdh"]
+
+[sub_resource type="CylinderMesh" id="CylinderMesh_o6w0v"]
+
+[node name="SceneStartGame" type="Node3D" unique_id=206670764]
+
+[node name="XROrigin3D" type="XROrigin3D" parent="." unique_id=764226725]
+
+[node name="XRCamera3D" type="XRCamera3D" parent="XROrigin3D" unique_id=1223672519]
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="." unique_id=1162879152]
+transform = Transform3D(1, 0, 0, 0, 0.11998898, 0, 0, 0, 1, 0, 0.08363664, -0.9237919)
+mesh = SubResource("CylinderMesh_o6w0v")
